@@ -1,0 +1,137 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif, helvetica;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Raleway', sans-serif, helvetica;
+  font-weight: 400;
+}
+
+.container {
+  background-color: #ED1E26;
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.ajax-search {
+  padding-bottom: 2em;
+}
+
+.ajax-search .input-group {
+  margin-bottom: 0;
+}
+
+.ajax-search .input-group .input-group-label {
+  background: #ffffff;
+}
+
+.ajax-search .input-group i {
+  color: #242424;
+}
+
+.ajax-search #resultList {
+  position: absolute;
+  border: solid 1px black;
+}
+
+.ajax-search .results {
+  background-color: #ffffff;
+  padding: 20px 100px 10px 100px;
+}
+
+.ajax-search .results p {
+  color: #242424;
+}
+
+.ajax-search .results a {
+  color: #242424;
+}
+
+.ajax-search .results :hover {
+  color: rgba(212, 66, 86, 0.8);
+}
+
+.ajax-result {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.ajax-result #pokemonCont {
+  padding: 30px 0 30px 0;
+  height: 100vh;
+}
+
+.ajax-result #pokemonCont .pokemonIMG h1 {
+  color: #242424;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ajax-result #pokemonCont .pokemonInfo {
+  color: #242424;
+  padding-top: 20px;
+}
+
+.ajax-result #pokemonCont .pokemonInfo h1 {
+  color: #242424;
+}
+
+.ajax-result #pokemonCont .pokemonInfo .types {
+  color: #242424;
+}
+
+.ajax-result #pokemonCont .stats {
+  border-radius: 20px;
+}
+
+.ajax-result #pokemonCont .stats tbody {
+  color: #242424;
+  background-color: transparent;
+  border: 0px;
+}
+
+.ajax-result #pokemonCont .stats tbody tr {
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-family: 300;
+}
+
+.input-group-label {
+  background: #242424;
+  border: none;
+}
+
+.input-group-label i {
+  color: white;
+}
+
+#mainContent {
+  color: #242424;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #pokemonCont {
+    height: 0;
+    padding: 0;
+  }
+  #pokemonCont .pokemonIMG {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #pokemonCont .pokemonIMG img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .ajax-result #pokemonCont {
+    height: 0px;
+  }
+  .ajax-result #pokemonCont .row {
+    padding-bottom: 2em;
+  }
+}

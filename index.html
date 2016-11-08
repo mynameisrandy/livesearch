@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokédex Live Search</title>
+        <link rel="shortcut icon" type="image/png" href="assets/pokedex-logo.png"/>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+        <script src="https://use.fontawesome.com/4738e672b5.js"></script>
+    </head>
+    <body>  
+        <h2 class="hidden">Pokédex livesearch Website</h2>
+        
+        <!-- START CONTAINER -->
+        <div class="container">
+        <h2 class="hidden">Container</h2>
+
+            <!-- AJAX SEARCH -->
+            <section class="ajax-search">
+
+                <div class="row">
+                    <div class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns logo">
+                        <figure>
+                            <img src="assets/pokedex-logo-white.svg" alt="Pokemon Logo"/>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Search Form -->
+                    <div class="small-12 medium-8 medium-offset-2 columns">
+                        <div class="input-group">
+                            <span class="input-group-label"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <input class="input-group-field" type="search" name="searchbox" id="searchbox" placeholder="Search Pokemon">
+                            
+                        </div>
+                        <!-- Search Results -->
+                        <div id="resultList">
+                            <h2 class="hidden">Show Results Here</h2>
+                        </div>
+                    </div> 
+                </div>     
+
+            </section> <!-- END AJAX SEARCH -->
+
+            <!-- AJAX RESULT -->
+            <section class="ajax-result" id="showResult">
+                <h2 class="hidden">Ajax Result Content Here</h2>
+            </section> <!-- END AJAX RESULT -->  
+
+        </div> <!-- END CONTAINER -->
+
+        
+        <!-- SCRIPTS -->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/utils.js"></script>
+    </body>
+</html>

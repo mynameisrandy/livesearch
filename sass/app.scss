@@ -1,0 +1,165 @@
+// Variables
+$main: #D44256;
+$white: #ffffff;
+$body: #242424;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif, helvetica;
+	font-weight: 700;
+}
+
+p {
+	font-family: 'Raleway', sans-serif, helvetica;	
+	font-weight: 400;
+}
+
+
+// SASS
+.container {
+	background-color: #ED1E26;
+	color: $white;
+}
+
+.hidden {
+	display: none;
+}
+
+// Search Form Area
+.ajax-search {
+	padding-bottom: 2em;
+	.input-group {
+		margin-bottom: 0;
+		.input-group-label {
+			background: $white;
+		}
+		i {
+			color: $body;
+		}
+	}
+	#resultList {
+		position: absolute;
+		border: solid 1px black;
+	}
+	.results{
+		background-color: $white;
+		padding: 20px 100px 10px 100px;
+		p {
+			color: $body;
+		}
+		a {
+			color: $body;
+		}
+		:hover {
+			color: rgba(212, 66, 86, .8); 
+		}
+	}
+}
+
+// Result
+.ajax-result {
+	text-align: center;
+	background-color: $white;
+	#pokemonCont{
+		padding: 30px 0 30px 0;
+		height: 100vh;
+		.pokemonIMG {
+			h1 {
+				color: $body;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+		.pokemonInfo {
+			color: $body;
+			h1 {
+				color: $body;
+			}
+			.types {
+				color: $body;
+			}
+			padding-top: 20px;
+		}
+		// Table
+		.stats {
+			border-radius: 20px;
+			tbody {
+				color: $body;
+				background-color: transparent;
+				border: 0px;
+				tr {
+					background-color: transparent;
+					font-family: 'Raleway', sans-serif;	
+					font-family: 300;
+				}
+			}
+		}
+	}
+}
+
+.input-group-label {
+	background: $body;
+	border: none;
+	i {
+		color: white;
+	}
+}
+
+
+#mainContent {
+	color: $body;
+}
+
+
+
+////////////////
+// END MOBILE
+///////////////
+
+
+
+///////////////////
+// Medium only ///
+/////////////////
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+
+
+	#pokemonCont {
+		height: 0;
+		padding: 0;
+		.pokemonIMG {
+			margin: 0 auto;
+			text-align: center;
+			img {
+				width: 50%;
+			}
+		}
+	}
+
+}
+////////////////////
+//  END MEDIUM  ///
+//////////////////
+
+
+
+///////////////////
+// LARGE ONLY ////
+/////////////////
+@media screen and (min-width: 64em) {
+
+	.ajax-result {
+		#pokemonCont {
+			height: 0px;
+			.row {
+				padding-bottom: 2em;
+			}
+		}
+	}
+
+}
+	
+////////////////////
+//  END LARGE  ////
+//////////////////
+
